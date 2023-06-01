@@ -14,7 +14,7 @@ sequenceDiagram
     participant OperationLogTable(SA)
     participant OperationBalance(SA)
 
-    rect rgb(58, 58, 58)
+    rect rgb(245, 245, 245)
     note left of Operación: Ingreso deuda e inventario
     Venta(Factura)-->>Cliente: datos relacionados
     Cliente-->>Producto: datos relacionados
@@ -27,7 +27,7 @@ sequenceDiagram
     AzFunPolGen->>OperationBalance(SA): insertarRegistro()
     end
 
-    rect rgb(58, 58, 58)
+    rect rgb(245, 245, 245)
     note left of Operación: Pago
     Venta(Factura)-->>Cliente: datos relacionados
     Cliente-->>Producto: datos relacionados
@@ -42,7 +42,7 @@ sequenceDiagram
     AzFunPolGen->>OperationBalance(SA): updateBalance()
     end
 
-    rect rgb(58, 58, 58)
+    rect rgb(245, 245, 245)
     note left of Operación: Pago parcial
     Venta(Factura)-->>Cliente: datos relacionados
     Cliente-->>Producto: datos relacionados
